@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Шапка Portfolio -->
+    <!-- ______________________________________Шапка index_____________________________________ -->
     <header class="header">
       <div class="container cont-header">
         <nav class="header-nav">
@@ -27,10 +27,10 @@
           >
           <ul class="nav-list list">
             <li class="item">
-              <a class="nav-link link" href="./index.html">Studio</a>
+              <a class="nav-link link current" href="./index.html">Studio</a>
             </li>
             <li class="item">
-              <a class="nav-link link current" href="./portfolio.html">Portfolio</a>
+              <a class="nav-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="item"><a class="nav-link link" href="">Contacts</a></li>
           </ul>
@@ -49,6 +49,85 @@
             </li>
           </ul>
         </address>
+
+        <!--__________________________________Mobile Menu______________________________________ -->
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-icon" width="32" height="22">
+            <use href="./images/symbol-defs.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="">
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg class="menu-close">
+                <use
+                  href="./images/symbol-defs.svg#icon-close-black-modal"
+                ></use>
+              </svg>
+            </button>
+            <nav class="">
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link" href="./index.html">Studio</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="">
+            <ul class="mob-address-list list">
+              <li class="mob-address-item">
+                <a class="mob-address-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-address-item">
+                <a
+                  class="mob-address-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-seti-list list">
+              <li>
+                <a class="mob-seti-link link" href="">
+                  <svg class="mob-seti-icon">
+                    <use href="./images/symbol-defs.svg#icon-inst-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="mob-seti-link link" href="">
+                  <svg class="mob-seti-icon">
+                    <use href="./images/symbol-defs.svg#icon-twi-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="mob-seti-link link" href="">
+                  <svg class="mob-seti-icon">
+                    <use href="./images/symbol-defs.svg#icon-face-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="mob-seti-link link" href="">
+                  <svg class="mob-seti-icon">
+                    <use href="./images/symbol-defs.svg#icon-ink-footer"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -265,7 +344,7 @@
     </main>
 
     <!-- Низ страницы/Подвал Portfolio -->
-        <footer class="footer-end">
+    <footer class="footer-end">
       <div class="container contact">
         <div class="end-website">
           <a class="footer-logo link" href="./index.html"
