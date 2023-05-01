@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Шапка index -->
+    <!-- ______________________________________Шапка index_____________________________________ -->
     <header class="header">
       <div class="container cont-header">
         <nav class="header-nav">
@@ -49,11 +49,90 @@
             </li>
           </ul>
         </address>
+
+        <!--__________________________________Mobile Menu______________________________________ -->
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-icon" width="32" height="22">
+            <use href="./images/symbol-defs.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="">
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg class="menu-close">
+                <use
+                  href="./images/symbol-defs.svg#icon-close-black-modal"
+                ></use>
+              </svg>
+            </button>
+            <nav class="">
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link" href="./index.html">Studio</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="">
+            <ul class="mob-address-list list">
+              <li class="mob-address-item">
+                <a class="mob-address-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-address-item">
+                <a
+                  class="mob-address-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-seti-list list">
+              <li>
+                <a class="mob-seti-link link" href="">
+                  <svg class="mob-seti-icon">
+                    <use href="./images/symbol-defs.svg#icon-inst-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="mob-seti-link link" href="">
+                  <svg class="mob-seti-icon">
+                    <use href="./images/symbol-defs.svg#icon-twi-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="mob-seti-link link" href="">
+                  <svg class="mob-seti-icon">
+                    <use href="./images/symbol-defs.svg#icon-face-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="mob-seti-link link" href="">
+                  <svg class="mob-seti-icon">
+                    <use href="./images/symbol-defs.svg#icon-ink-footer"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
-      <!-- Оглавление/ Hero index -->
+      <!-- _____________________________Оглавление/ Hero index________________________________ -->
       <section class="hero">
         <h1 class="hero-title">
           Effective Solutions<br />
@@ -64,7 +143,7 @@
         </button>
       </section>
 
-      <!-- Секция подход к работе/approach to work -->
+      <!--__________________________ Секция подход к работе/approach to work_____________________ -->
       <section class="work">
         <div class="container">
           <h2 hidden class="work-title">approach to work</h2>
@@ -120,7 +199,7 @@
           </ul>
         </div>
       </section>
-      <!-- Секция картинок -->
+      <!--________________________________ Секция картинок________________________________________ -->
       <section class="pictures">
         <div class="container">
           <h2 class="pictures-title">What are we doing</h2>
@@ -128,6 +207,7 @@
             <li class="pictures-item">
               <img
                 src="./images/img1.jpg"
+                srcset="./images/img1-2x.jpg 2x"
                 alt="monitor"
                 width="360"
                 height="300"
@@ -136,6 +216,7 @@
             <li class="pictures-item">
               <img
                 src="./images/img2.jpg"
+                srcset="./images/img2-2x.jpg 2x"
                 alt="phone"
                 width="360"
                 height="300"
@@ -144,6 +225,7 @@
             <li class="pictures-item">
               <img
                 src="./images/img3.jpg"
+                srcset="./images/img3-2x.jpg 2x"
                 alt="connection"
                 width="360"
                 height="300"
@@ -160,6 +242,7 @@
             <li class="team-item">
               <img
                 src="./images/foto1.jpg"
+                srcset="./images/foto1-2x.jpg 2x"
                 alt="man"
                 width="264"
                 height="260"
@@ -210,6 +293,7 @@
             <li class="team-item">
               <img
                 src="./images/foto2.jpg"
+                srcset="./images/foto2-2x.jpg 2x"
                 alt="young man"
                 width="264"
                 height="260"
@@ -260,6 +344,7 @@
             <li class="team-item">
               <img
                 src="./images/foto3.jpg"
+                srcset="./images/foto3-2x.jpg 2x"
                 alt="young girl"
                 width="264"
                 height="260"
@@ -310,6 +395,7 @@
             <li class="team-item">
               <img
                 src="./images/foto4.jpg"
+                srcset="./images/foto4-2x.jpg 2x"
                 alt="young man"
                 width="264"
                 height="260"
@@ -361,7 +447,7 @@
         </div>
       </section>
 
-      <!-- Клиенты/Customers -->
+ <!--________________________________ Клиенты/Customers__________________________________ -->
       <section class="customers">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
@@ -413,7 +499,7 @@
       </section>
     </main>
 
-    <!-- Низ страницы/Подвал index -->
+<!-- _____________________________Низ страницы/Подвал index____________________________ -->
     <footer class="footer-end">
       <div class="container contact">
         <div class="end-website">
@@ -480,6 +566,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- _____________________________________Модальное окно____________________________  -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -501,7 +589,7 @@
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-person-black"></use>
               </svg>
-            </span>
+            </span> 
           </label>
           <label class="modal-label"
             ><span class="modal-desc">Phone</span>
@@ -556,6 +644,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
